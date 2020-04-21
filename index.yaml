@@ -1,0 +1,145 @@
+apiVersion: v1
+entries:
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-21T15:41:13.307064667+03:00"
+    description: Flexible and powerful open source, distributed real-time search and
+      analytics engine.
+    digest: b9be797ce47da71f6547c8e292db00d016101d649b312705900731a9763a22a3
+    home: https://www.elastic.co/products/elasticsearch
+    icon: https://static-www.elastic.co/assets/blteb1c97719574938d/logo-elastic-elasticsearch-lt.svg
+    maintainers:
+    - email: christian@jetstack.io
+      name: simonswine
+    - email: michael.haselton@gmail.com
+      name: icereval
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: elasticsearch
+    sources:
+    - https://www.elastic.co/products/elasticsearch
+    - https://github.com/jetstack/elasticsearch-pet
+    - https://github.com/giantswarm/kubernetes-elastic-stack
+    - https://github.com/GoogleCloudPlatform/elasticsearch-docker
+    - https://github.com/clockworksoul/helm-elasticsearch
+    - https://github.com/pires/kubernetes-elasticsearch-cluster
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/elasticsearch-1.15.3/elasticsearch-1.15.3.tgz
+    version: 1.15.3
+  fluentd-elasticsearch:
+  - apiVersion: v1
+    appVersion: 2.3.2
+    created: "2020-04-21T15:41:13.503866716+03:00"
+    description: A Fluentd Helm chart for Kubernetes with Elasticsearch output
+    digest: 065bce1262873af1379f8a574d202fb66d98e99d2247001985141cb9c205ea6e
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/fluent/fluentd-docs/master/public/logo/Fluentd_square.png
+    keywords:
+    - fluentd
+    - elasticsearch
+    - multiline
+    - detect-exceptions
+    - logging
+    maintainers:
+    - email: monotek23@gmail.com
+      name: monotek
+    name: fluentd-elasticsearch
+    sources:
+    - https://github.com/kubernetes/charts/stable/fluentd-elasticsearch
+    - https://github.com/fluent/fluentd-kubernetes-daemonset
+    - https://github.com/GoogleCloudPlatform/fluent-plugin-detect-exceptions
+    - https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/fluentd-elasticsearch/fluentd-es-image
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/fluentd-elasticsearch-1.4.1/fluentd-elasticsearch-1.4.1.tgz
+    version: 1.4.1
+  grafana:
+  - apiVersion: v1
+    appVersion: 6.4.2
+    created: "2020-04-21T15:41:14.07161421+03:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: df60d9a1893c4da9ed8edd4345d940b23bf8d088599fc8c6d3fdf6d42ee99460
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/grafana-4.0.2/grafana-4.0.2.tgz
+    version: 4.0.2
+  kibana:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-21T15:41:14.401758863+03:00"
+    description: Kibana is an open source data visualization plugin for Elasticsearch
+    digest: 9e6609dc283eed602b91dcc8386dd77c2a22561ca309214191fe18f74e30d9d1
+    home: https://www.elastic.co/products/kibana
+    icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
+    keywords:
+    - elasticsearch
+    - kibana
+    maintainers:
+    - email: casey@monax.io
+      name: compleatang
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/kibana-1.1.2/kibana-1.1.2.tgz
+    version: 1.1.2
+  logstash:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-21T15:41:14.60239311+03:00"
+    description: Logstash is an open source, server-side data processing pipeline
+    digest: e1ff8a0fb95af1debc5948acf9b70a9a8197b48c3ad27cb47ef34e0f0f9312fa
+    home: https://www.elastic.co/products/logstash
+    icon: https://www.elastic.co/assets/blt86e4472872eed314/logo-elastic-logstash-lt.svg
+    maintainers:
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: jrodgers@powerhrg.com
+      name: jar361
+    - email: christian.roggia@gmail.com
+      name: christian-roggia
+    name: logstash
+    sources:
+    - https://www.docker.elastic.co
+    - https://www.elastic.co/guide/en/logstash/current/index.html
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/logstash-1.4.2/logstash-1.4.2.tgz
+    version: 1.4.2
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.13.1
+    created: "2020-04-21T15:41:14.811979261+03:00"
+    description: Prometheus is a monitoring system and time series database.
+    digest: a811ca50217dd0f7f2ac3299685ffcae6fa3384172f8966bb4eefec479f80cc4
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    urls:
+    - https://github.com/iovacatalin/other_charts/releases/download/prometheus-9.3.1/prometheus-9.3.1.tgz
+    version: 9.3.1
+generated: "2020-04-21T15:41:12.398411433+03:00"
